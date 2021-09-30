@@ -104,9 +104,14 @@ public class MainActivity extends AppCompatActivity {
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                try {
                 String string1 = editText1.getText().toString();
-
                 Toast.makeText(getApplicationContext(), string1, Toast.LENGTH_SHORT).show();
+                }
+
+                catch (Exception e) {
+
+                }
             }
         });
         
